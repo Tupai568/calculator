@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="menu">
+      <h4 class="red">red</h4>
+      <h4 class="green">green</h4>
+      <h4 class="defauld">defauld</h4>
+    </div>
+    <div class="change">
+      <h4>Change Color</h4>
+      <i class="bx bxs-cog"></i>
+    </div>
+    <div class="container">
+      <div class="logo">
+        <h1>Calculator</h1>
+      </div>
+      <div class="result">
+        <form name="form">
+          <input type="textarea" name="textarea" placeholder="0" disabled/>
+        </form>
+      </div>
+      <div class="hasil">
+        <span>0</span>
+      </div>
+      <div class="tombol">
+        <input
+          class="btn"
+          type="button"
+          value="BACK"
+          onclick="Result.Kembali()"
+        />
+        <input
+          class="btn"
+          type="button"
+          value="DEL"
+          onclick="Result.Delete()"
+        />
+        <input
+          class="btn"
+          type="button"
+          value="%"
+          onclick="Result.Operator('%')"
+        />
+        <input
+          class="btn"
+          type="button"
+          value="÷"
+          onclick="Result.Operator('/')"
+        />
+        <input class="btn" type="button" value="7" onclick="Result.Res(7)" />
+        <input class="btn" type="button" value="8" onclick="Result.Res(8)" />
+        <input class="btn" type="button" value="9" onclick="Result.Res(9)" />
+        <input
+          class="btn"
+          type="button"
+          value="X"
+          onclick="Result.Operator('*')"
+        />
+        <input class="btn" type="button" value="4" onclick="Result.Res(4)" />
+        <input class="btn" type="button" value="5" onclick="Result.Res(5)" />
+        <input class="btn" type="button" value="6" onclick="Result.Res(6)" />
+        <input
+          class="btn"
+          type="button"
+          value="-"
+          onclick="Result.Operator('-')"
+        />
+        <input class="btn" type="button" value="1" onclick="Result.Res(1)" />
+        <input class="btn" type="button" value="2" onclick="Result.Res(2)" />
+        <input class="btn" type="button" value="3" onclick="Result.Res(3)" />
+        <input
+          class="btn"
+          type="button"
+          value="+"
+          onclick="Result.Operator('+')"
+        />
+        <input
+          class="btn"
+          type="button"
+          value="00"
+          onclick="Result.Res('00')"
+        />
+        <input class="btn" type="button" value="0" onclick="Result.Res(0)" />
+        <input class="btn" type="button" value="." onclick="Result.Res('.')" />
+        <input
+          class="btn has"
+          type="button"
+          value="="
+          onclick="Result.Hasil()"
+        />
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

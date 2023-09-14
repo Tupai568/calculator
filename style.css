@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+:root {
+  --bg-color: rgb(32, 39, 46);
+  --main-color: rgb(48, 48, 52);
+  --text-color: rgb(80, 255, 255);
+}
+
+body {
+  background: var(--main-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow-y: hidden;
+}
+
+.menu {
+  width: 25rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: var(--bg-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 25px black;
+  position: absolute;
+  z-index: 1;
+  top: -100%;
+  transition: all 0.5s;
+}
+
+.ubah {
+  top: 30%;
+}
+
+.red {
+  background: red;
+  width: 10rem;
+  height: 2rem;
+  text-align: center;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.green {
+  background: green;
+  width: 10rem;
+  height: 2rem;
+  text-align: center;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+
+.defauld {
+  background: var(--bg-color);
+  width: 10rem;
+  height: 2rem;
+  text-align: center;
+  line-height: 2rem;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 0 1px var(--text-color);
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.red:hover {
+  border: 2px solid black;
+}
+
+.green:hover {
+  border: 2px solid black;
+}
+
+.defauld:hover {
+  border: 2px solid black;
+}
+
+.change {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.1rem 1rem;
+  width: 19rem;
+  height: 1.5rem;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 5px red;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+.change h4 {
+  letter-spacing: 0.1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.change i {
+  color: red;
+  cursor: pointer;
+}
+
+.change i:hover {
+  filter: drop-shadow(0 0 1px var(--text-color));
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 20rem;
+  height: 30rem;
+  background: var(--bg-color);
+  border-radius: 0.5rem;
+  box-shadow: 0 0 5px var(--text-color);
+  padding: 0.3rem;
+  position: relative;
+}
+
+.logo {
+  color: var(--text-color);
+  padding: 1rem;
+}
+
+.result {
+  width: 100%;
+}
+
+form input {
+  width: 100%;
+  height: 4rem;
+  background: var(--main-color);
+  color: var(--text-color);
+  box-shadow: 0 0 1px var(--text-color);
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.hasil {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 2rem;
+  position: relative;
+}
+
+.hasil span {
+  position: absolute;
+  right: 2%;
+  font-size: 1rem;
+  color: var(--text-color);
+}
+
+.tombol {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.btn {
+  width: 3.5rem;
+  height: 2rem;
+  margin: 0.5rem;
+  margin-bottom: 1rem;
+  border: none;
+  border-radius: 50%;
+  background: var(--main-color);
+  color: var(--text-color);
+  box-shadow: 0 0 5px var(--text-color);
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: var(--bg-color);
+  background: var(--text-color);
+  box-shadow: 0 0 5px var(--bg-color);
+  transform: scale(1.1);
+}
+
+.container-red {
+  background: linear-gradient(to top right, red, black);
+}
+
+.container-green {
+  background: linear-gradient(to top right, green, black);
+}
